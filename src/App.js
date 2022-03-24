@@ -144,7 +144,7 @@ const App = () => {
       />
       <Route
         path="/the-silly-things"
-        element={<SillyThings things={somesThings} />}
+        element={<SillyThings things={someoneElsesThings} />}
       />
     </Routes>
   )

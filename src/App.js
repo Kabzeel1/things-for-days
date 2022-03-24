@@ -87,12 +87,12 @@ const App = () => {
     },
   ])
 
-  const [davidsThings, setDavidsThings] = useState([
+  const [illiasThings, setIlliasThings] = useState([
     {
-      name: 'waffle',
+      name: 'truffle',
       image:
         'https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
-      attributes: ['tasty', 'fluffy', 'breakfast', 'yummy'],
+      attributes: ['truffy', 'shmaffy', 'mushroom', 'yummy'],
     },
     {
       name: 'giraffe',
@@ -140,7 +140,7 @@ const App = () => {
       />
       <Route
         path="/the-well-styled-things"
-        element={<StyledThings things={davidsThings} />}
+        element={<StyledThings things={illiasThings} />}
       />
       <Route
         path="/the-silly-things"

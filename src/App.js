@@ -26,7 +26,7 @@ const App = () => {
       ],
     },
     {
-      name: 'BluBlockers',
+      name: 'glasses',
       image:
         'https://susanmaryetta.files.wordpress.com/2011/06/blublocker-the-hangover.png?w=584',
       attributes: [
@@ -49,16 +49,16 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [lukesThings, setLukesThings] = useState([
     {
-      name: 'banana',
+      name: 'dog',
       image:
-        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        'https://www.princeton.edu/sites/default/files/styles/half_1x/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=fAtaOLnw',
       attributes: [
-        'potassium-rich',
-        'yellow when good',
+        'good boy',
+        'smells',
         'not a taco',
-        'ring ring ring ring ring ring ring',
+        'bark bark bark bark',
       ],
     },
     {
@@ -73,29 +73,26 @@ const App = () => {
       ],
     },
     {
-      name: 'taco',
+      name: 'nothing',
       image:
-        'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/800px-Square_-_black_simple.svg.png',
       attributes: [
-        'yummy in my tummy',
-        'salsas may vary',
-        'definitely a taco',
-        'very edible',
+        'nothing',
       ],
     },
     {
-      name: 'linux',
-      image: 'https://i.imgur.com/3BmfSOA.png',
-      attributes: ['not a taco', 'not Windows', 'not macOS', 'Penguins?'],
+      name: 'coffee',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG',
+      attributes: ['good', 'hot', 'cold', 'Penguins?'],
     },
   ])
 
-  const [davidsThings, setDavidsThings] = useState([
+  const [illiasThings, setIlliasThings] = useState([
     {
-      name: 'waffle',
+      name: 'truffle',
       image:
         'https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
-      attributes: ['tasty', 'fluffy', 'breakfast', 'yummy'],
+      attributes: ['truffy', 'shmaffy', 'mushroom', 'yummy'],
     },
     {
       name: 'giraffe',
@@ -121,7 +118,7 @@ const App = () => {
     },
   ])
 
-  const [erinsThings, setErinsThings] = useState([
+  const [someoneElsesThings, setSomeoneElsesThings] = useState([
     {
       name: "dnd",
       image: "https://i.imgur.com/NicF3Yr.png",  
@@ -139,18 +136,20 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<ManliestThings things={lukesThings} />}
       />
       <Route
         path="/the-well-styled-things"
-        element={<StyledThings things={davidsThings} />}
+        element={<StyledThings things={illiasThings} />}
       />
       <Route
         path="/the-silly-things"
-        element={<SillyThings things={erinsThings} />}
+        element={<SillyThings things={somesThings} />}
       />
     </Routes>
   )
 }
+
+// this is a message
 
 export default App

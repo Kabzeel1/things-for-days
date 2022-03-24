@@ -118,7 +118,7 @@ const App = () => {
     },
   ])
 
-  const [erinsThings, setErinsThings] = useState([
+  const [someoneElsesThings, setSomeoneElsesThings] = useState([
     {
       name: "dnd",
       image: "https://i.imgur.com/NicF3Yr.png",  
